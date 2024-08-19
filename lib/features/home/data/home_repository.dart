@@ -1,3 +1,4 @@
+import 'package:hello_zeen/features/home/data/home_request.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../../../api_client/rest_api_client.dart';
 part 'home_repository.g.dart';
@@ -9,10 +10,10 @@ class HomeRepository {
   Future<String> getData() async {
     /// ****** just comment token invalid formt exceptions  because of without encryption token
 
-    // var response = await client.execute(request: DataRequest.getData());
+    var response = await client.execute(request: DataRequest.getData());
 
-    // return response.toString();
-    return 'hello ...';
+    return response.toString();
+    // return 'hello ...';
   }
 }
 

@@ -22,6 +22,7 @@ class MyApp extends ConsumerWidget {
         useMaterial3: true,
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
+            disabledBackgroundColor: Colors.grey.shade500,
             backgroundColor: Colors.blue.shade900, // background (button) color
             foregroundColor: Colors.white, // foreground (text) color
           ),
